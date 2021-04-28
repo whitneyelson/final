@@ -1,0 +1,317 @@
+body{
+    background-color: #EBE8E6;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(10, auto);
+    justify-items: center;
+    grid-gap: .5rem; 
+    margin: 2rem;
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+.gear-item img{
+    max-width: 250px;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 50%;
+}
+.container > div{
+    background: #7CAE5C;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.portfolio-display img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.morocco-display img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+#home-nav{
+    list-style: none; 
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.column img:hover{
+    animation: scale 2s both ease-in-out;
+}
+
+@keyframes scale{
+    to{
+        transform: scale(1.03);
+    }
+}
+
+@keyframes expand-contract{
+    50% {width: 40em; height:40em; border-radius: 5%}
+}
+
+.slides{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    animation-timing-function: ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#home-nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0px 8vw 0px 8vw;
+}
+
+.portfolio-display p{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+}
+#location-selector ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Cinzel', serif;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0px 8vw 0px 8vw;
+}
+#location-selector li{
+    display:inline-block;
+    margin: 0px;
+    position: relative;
+    font-family: 'Cinzel', serif;
+}
+
+#location-selector li a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    float: left
+}
+#location-selector li a:hover {
+    color: #FFFFFF;
+    background-color: #A0C2A8;
+    border-radius: 10px;
+    box-shadow: grey 3px 3px;
+}
+
+.morocco-sound p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.play {
+  border: none;
+  margin-left: 30%;
+  margin-bottom: 30px;
+  width: 45%;
+  color: white;
+  background-color: #A0C2A8;
+  padding: 15px 32px; 
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px; 
+  font-family: 'Montserrat', sans-serif;
+}
+.morocco-header p{
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 50px;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+}
+#home-nav li{
+    display:inline-block;
+    margin: 0px;
+    position: relative;
+    font-family: 'Cinzel', serif;
+}
+
+.gear-item a:hover{
+    color: #FFFFFF;
+}
+#home-nav li a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    float: left
+}
+#home-nav li a:hover {
+    color: #FFFFFF;
+    background-color: #A0C2A8;
+    border-radius: 10px;
+    box-shadow: grey 3px 3px;
+}
+
+#signature-home{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 6vh 0vh 6vh 0vh;
+    color: #1D241B;           
+}
+
+#about-me{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 6vh 0vh 6vh 0vh;
+    color: #1D241B;
+}
+
+
+#about-me img{
+    width: 600px;
+    border-radius: 6px;
+    padding: 6vh 0vh 6vh 0vh;
+
+}
+
+.hov-about-me h3{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: #1D5E51;
+}
+
+#about-me p{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 20px; 
+    text-align: left;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.signature-nav{
+    font-family: 'Cinzel', serif;
+    font-weight:700;
+    font-size:20px;
+    color: #1D241B;           
+}
+
+.site-header{
+    position:relative;
+    background-color:#A0C2A8
+    }
+
+.site-header_wrapper{
+    padding-top:1rem; 
+    padding-bottom:1rem;
+    @media(min-width:600px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:0;
+    padding-bottom:0;}
+
+.nav_wrapper{display:flex}
+
+@media(max-width:599px){.nav_wrapper{position:absolute;top:100%;right:0;left:0;z-index:-1;background-color:#d9f0f7;visibility:hidden;opacity:0;transform:translateY(-100%);transition:transform .3s ease-out,opacity .3s ease-out} 
+    
+.nav_wrapper.active{visibility:visible;opacity:1;transform:translateY(0)}}
+
+.nav_item a{display:block;padding:1.5rem 1rem}
+.nav_item a:hover{
+    color: #FFFFFF;
+}
+.nav_toggle{display:none}@media(max-width:599px){.nav_toggle{display:block;position:absolute;right:1rem;top:1rem}}
+
+
+.nav li{
+    font-family: 'Cinzel', serif;
+}
+.wrapper {
+  max-width: 1140px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+html,body,div,header,menu,nav{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline}
+header,menu,nav{
+    display:block}
+body{
+    line-height:1}
+ol,ul{
+    list-style:none}
+ 

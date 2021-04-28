@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device - width, initial-scale = 1">
+        <title> Craig Elson Photography</title>
+        <link rel = 'stylesheet' href='portfolio-sheet.css' /> 
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+    
+    <div id = "signature-home">
+        <p> Craig Elson Photography</p>
+        <hr>
+        
+        </div>
+    <div id = "home-nav">
+            <ul>
+                <li><a class = "home" href = "index.html"> Home</a></li>
+                <li><a href = "bio.html"> Bio</a></li>
+                <li><a href = "portfolio.html"> Portfolio</a></li>
+                <li><a href = "gear.html"> Gear</a> </li>
+                <li><a href = "contact.html"> Contact</a></li>
+            </ul>
+        </div>
+        
+        <img class = "slides" src="indonesia-1.jpg">
+        <img class = "slides" src="indonesia-2.jpg">
+        <img class = "slides" src="india-5.jpg">
+        <img class = "slides" src="indonesia-3.jpg">
+        <img class = "slides" src="indonesia-4.jpg">
+        <img class = "slides" src="indonesia-5.jpg">
+        <img class = "slides" src="indonesia-6.jpg">
+        <img class = "slides" src="indonesia-7.jpg">
+        <img class = "slides" src="indonesia-8.jpg">
+        <img class = "slides" src="indonesia-9.jpg">
+        <img class = "slides" src="indonesia-10.jpg">
+        <img class = "slides" src="indonesia-11.jpg">
+        <img class = "slides" src="indonesia-12.jpg">
+        
+        <img class = "slides" src="india-1.jpg">
+        <img class = "slides" src="india-9.jpg">
+        <img class = "slides" src="india-2.jpg">
+        <img class = "slides" src="india-3.jpg">
+        <img class = "slides" src="india-4.jpg">
+        <img class = "slides" src="india-6.jpg">
+        <img class = "slides" src="india-7.jpg">
+        <img class = "slides" src="india-8.jpg">
+        <img class = "slides" src="india-10.jpg">
+        <img class = "slides" src="india-11.jpg">
+        <img class = "slides" src="india-12.jpg">
+        
+        <script>
+            var slideIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slides");
+                for(i = 0; i < x.length; i++){
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if(slideIndex > x.length){slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 2000);
+            }
+        
+        </script>
+    
+    </body>
+
+</html>

@@ -1,0 +1,150 @@
+body{
+    background-color: #EBE8E6;
+}
+
+#about-me{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 6vh 0vh 6vh 0vh;
+    color: #1D241B;
+}
+
+#about-me img{
+    width: 600px;
+    border-radius: 6px;
+    padding: 6vh 0vh 6vh 0vh;
+
+}
+
+#photo-row{
+    display: grid;
+    grid-template-columns: 3, auto;
+    grid-template-rows: 1;
+    column-gap: 40px;
+    height: 200px;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+#one{
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 50%;
+    margin-bottom: 400px;
+}
+
+#two{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#three{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+h3{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: #1D5E51;
+}
+
+#about-me p{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 20px; 
+    text-align: left;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.signature-nav{
+    font-family: 'Cinzel', serif;
+    font-weight:700;
+    font-size:20px;
+    color: #1D241B;           
+}
+
+.site-header{
+    position:relative;
+    background-color:#A0C2A8
+    }
+
+.site-header_wrapper{
+    padding-top:1rem; 
+    padding-bottom:1rem;
+    @media(min-width:600px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:0;
+    padding-bottom:0;}
+
+.nav_wrapper{display:flex}
+
+@media(max-width:599px){.nav_wrapper{position:absolute;top:100%;right:0;left:0;z-index:-1;background-color:#d9f0f7;visibility:hidden;opacity:0;transform:translateY(-100%);transition:transform .3s ease-out,opacity .3s ease-out} 
+    
+.nav_wrapper.active{visibility:visible;opacity:1;transform:translateY(0)}}
+
+.nav_item a{display:block;padding:1.5rem 1rem}
+.nav_item a:hover{
+    color: #FFFFFF;
+}
+.nav_toggle{display:none}@media(max-width:599px){.nav_toggle{display:block;position:absolute;right:1rem;top:1rem}}
+
+
+.nav li{
+    font-family: 'Cinzel', serif;
+}
+.wrapper {
+  max-width: 1140px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+html,body,div,header,menu,nav{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline}
+header,menu,nav{
+    display:block}
+body{
+    line-height:1}
+ol,ul{
+    list-style:none}
+ 
